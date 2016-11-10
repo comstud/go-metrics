@@ -1,0 +1,28 @@
+{
+	"ImportPath": "github.com/tilteng/go-metrics/metrics_mw",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/DataDog/datadog-go/statsd",
+			"Comment": "1.0.0-3-g09566b9",
+			"Rev": "09566b9502a4901761da924b4971011dc0376391"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.1-27-g757bef9",
+			"Rev": "757bef944d0f21880861c2dd9c871ca543023cba"
+		},
+		{
+			"ImportPath": "github.com/tilteng/go-api-router/api_router",
+			"Rev": "7f83c88ce7bf095551b3cdb5983f77aee969126b"
+		},
+		{
+			"ImportPath": "github.com/tilteng/go-metrics/metrics",
+			"Rev": "d4e699808e7e4451828b7bbf4a52cd5345d29406"
+		}
+	]
+}
