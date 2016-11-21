@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/tilteng/go-metrics/metrics_mw",
+	"ImportPath": "github.com/tilteng/go-metrics",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v74",
 	"Packages": [
@@ -18,11 +18,7 @@
 		},
 		{
 			"ImportPath": "github.com/tilteng/go-api-router/api_router",
-			"Rev": "7f83c88ce7bf095551b3cdb5983f77aee969126b"
-		},
-		{
-			"ImportPath": "github.com/tilteng/go-metrics/metrics",
-			"Rev": "d4e699808e7e4451828b7bbf4a52cd5345d29406"
+			"Rev": "c17b0b62461cd7ec02896743412d485f047ef3c2"
 		}
 	]
 }
