@@ -124,8 +124,6 @@ func NewDDClient(addr string) (*ddClient, error) {
 		addr += ":8125"
 	}
 
-	fmt.Printf("Using address: %s\n", addr)
-
 	return &ddClient{
 		addr: addr,
 		tags: make(map[string]string),

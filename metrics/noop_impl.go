@@ -67,8 +67,8 @@ func (self *noopClient) TimingMS(name string, value float64, rate float64, tags 
 	return nil
 }
 
-func NewNoopClient(addr string) (*noopClient, error) {
+func NewNOOPClient() *noopClient {
 	return &noopClient{
 		tags: make(map[string]string),
-	}, nil
+	}
 }
