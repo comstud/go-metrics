@@ -19,7 +19,8 @@ dependencies:
 
 test:
   pre:
-    - go vet ./...
+    - go vet ./metrics
+    - go vet ./metrics_mw
 
   override:
     - cd "$SRC_GOPATH" && go test -v -race ./...
