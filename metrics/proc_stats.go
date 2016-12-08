@@ -17,7 +17,7 @@ type ProcStats struct {
 	MemStats      runtime.MemStats
 	CPUTimes      cpu.TimesStat
 	NumFDs        int32
-	IOCounters    net.IOCountersStat
+	IOCounters    []net.IOCountersStat
 }
 
 func GetProcStats() *ProcStats {
@@ -38,8 +38,8 @@ func GetProcStats() *ProcStats {
 			sample.NumFDs = fds
 		}
 
-		if netinfo, err := p.NetIOCounters(true); err == nil {
-			sample.IOCounters = netinfo[0]
+		if netinfo, err := p.NetIOCounters(false); err == nil {
+			sample.IOCounters = netinfo
 		}
 	}
 
